@@ -1,0 +1,11 @@
+<li class="list-group-item">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{postListItem.title}}</h5>
+        <small>{{ postListItem.created_at | date: 'MMMM d, yyyy HH:mm a'}}</small>
+    </div>
+    <p class="mb-1">{{ postListItem.content }}</p>
+    <div class="btn-group">
+        <button class="btn btn-success">Like {{ postListItem.like }} </button>
+        <button class="btn btn-danger">Dislike </button>
+    </div>
+</li>
